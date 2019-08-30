@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
 	}
 
 	f = fopen("cep_ordenado_novo.dat","r");
-    if(!f) {
+	if(!f) {
 		fprintf(stderr,"Arquivo %s nao pode ser aberto.\n", argv[0]);
 		return 1;
 	}
@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
         }
     }
     if(strncmp(argv[1], e.cep, 8) == 0){
-        printf("%.72s\n%.72s\n%.72s\n%.72s\n%.2s\n%.8s\n", e.logradouro, e.bairro, e.cidade, e.uf, e.sigla, e.cep);
+		printf("%.72s\n%.72s\n%.72s\n%.72s\n%.2s\n%.8s\n", e.logradouro, e.bairro, e.cidade, e.uf, e.sigla, e.cep);
     } else {
 		printf("CEP nao encontrado.\n");
     }
