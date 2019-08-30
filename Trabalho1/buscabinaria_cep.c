@@ -36,11 +36,11 @@ int main(int argc, char **argv) {
 	ultimo = (posicao/sizeof(Endereco))-1;
 	meio = (primeiro + ultimo)/2;
 	rewind(f);
-    fseek(f, meio * sizeof(Endereco), SEEK_SET);
-    fread(&e, sizeof(Endereco), 1, f);
+	fseek(f, meio * sizeof(Endereco), SEEK_SET);
+	fread(&e, sizeof(Endereco), 1, f);
 
     if(strncmp(argv[1], e.cep, 8) == 0){
-        ultimo = primeiro - 1;
+		ultimo = primeiro - 1;
     }
 
     while(primeiro <= ultimo){
@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
     if(strncmp(argv[1], e.cep, 8) == 0){
         printf("%.72s\n%.72s\n%.72s\n%.72s\n%.2s\n%.8s\n", e.logradouro, e.bairro, e.cidade, e.uf, e.sigla, e.cep);
     } else {
-			printf("CEP nao encontrado.\n");
+		printf("CEP nao encontrado.\n");
     }
 	
 	fclose(f);
