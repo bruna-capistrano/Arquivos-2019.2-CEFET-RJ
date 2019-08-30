@@ -19,8 +19,8 @@ int main(int argc, char **argv) {
 	long posicao, primeiro, ultimo, meio;
 
 	if(argc != 2) {
-        fprintf(stderr, "Erro na chamada de comando.\n");
-        fprintf(stderr,"USO: %s [CEP]", argv[0]);
+		fprintf(stderr, "Erro na chamada de comando.\n");
+		fprintf(stderr,"USO: %s [CEP]", argv[0]);
 		return 1;
 	}
 
