@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 #pragma pack(1)
 
@@ -34,8 +33,7 @@ void intercala(char *a, char *b, char *c)//intercala arquivos ordenados 2 a 2
     f2 = fopen(b,"r");
         
     saida = fopen(c, "w"); //abrindo arquivo de saída para escrita
-    printf("Abri saida\n");
-   
+       
     fread(&ea, sizeof(Endereco), 1, f1);//lendo f1 e f2 para ea e eb
 	fread(&eb, sizeof(Endereco), 1, f2);
     
@@ -43,13 +41,13 @@ void intercala(char *a, char *b, char *c)//intercala arquivos ordenados 2 a 2
 	{
 		if(compara(&ea,&eb)<0) //comparando os endereços ea e eb
 		{//ea é menor do que eb
-			fwrite(&ea,sizeof(Endereco),1,saida);//então, na saída eu escrevo o ea 
-			fread(&ea, sizeof(Endereco), 1, f1);//e leio outro ea do arquivo de entrada
+			fwrite(&ea,sizeof(Endereco),1,saida);//então, na saída escreve o ea 
+			fread(&ea, sizeof(Endereco), 1, f1);//e lê outro ea do arquivo de entrada
 		}
 		else //se eb for menor que ea
 		{
-			fwrite(&eb,sizeof(Endereco),1,saida);//escrevo eb na saída
-			fread(&eb,sizeof(Endereco),1,f2);//leio outro eb do arquivo de entrada
+			fwrite(&eb,sizeof(Endereco),1,saida);//escreve eb na saída
+			fread(&eb,sizeof(Endereco),1,f2);//lê outro eb do arquivo de entrada
 		}
     }
      while(!feof(f1))
