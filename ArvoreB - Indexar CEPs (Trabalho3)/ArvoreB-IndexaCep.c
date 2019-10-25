@@ -232,9 +232,10 @@ int main()
     long posicao;
     ArvoreB* a = ArvoreB_Abre("arvore.dat");
     FILE *f1;
-    f1 = fopen("cep.dat", "rb");
+    char nomeArq[] = "cep.dat";
+    f1 = fopen(nomeArq, "rb");
     if(!f1) {
-        fprintf(stderr,"Arquivo nao pode ser aberto para leitura\n");
+        fprintf(stderr,"Arquivo %s nao pode ser aberto para leitura\n", nomeArq);
         return 1;
     }
     indexaCEP(a, f1);
