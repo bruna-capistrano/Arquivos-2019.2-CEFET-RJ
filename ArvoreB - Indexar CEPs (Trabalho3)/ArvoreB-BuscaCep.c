@@ -142,9 +142,10 @@ int main(int argc, char** argv)
         fprintf(stderr, "USO: %s [CEP]", argv[0]);
         return 1;
     }
-    f1 = fopen("cep.dat", "r");
+    char nomeArq[] = "cep.dat";
+    f1 = fopen(nomeArq, "r");
     if(!f1) {
-        fprintf(stderr,"Arquivo nao pode ser aberto para leitura\n");
+        fprintf(stderr,"Arquivo %s nao pode ser aberto para leitura\n", nomeArq);
         return 1;
     }
     Endereco *e = (Endereco*)malloc(sizeof(Endereco));
