@@ -20,8 +20,8 @@ struct _ArvoreB_Cabecalho
 
 struct _ArvoreB
 {
-    ArvoreB_Cabecalho* cabecalho;//ponteiro para o cabeçalho
-    FILE* f;    //ponteiro para o arquivo onde a árvore está armazanada
+    ArvoreB_Cabecalho* cabecalho;
+    FILE* f;    
 };
 
 struct _ArvoreB_Elemento
