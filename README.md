@@ -11,4 +11,6 @@ Arquivo: separaeordena.c faz a partição e ordenação dos arquivos.
 Arquivo: intercalaCEPs.c faz a intercalação dois a dois das partições geradas pelo código acima.
 Para execução, o arquivo "cep.dat" deve estar na mesma pasta que os arquivos do código-fonte.
 
+# Trabalho 3 - Indexar arquivo do cep na árvore B
+
 *Programas compilados usando o compilador GCC no Windows 10.
