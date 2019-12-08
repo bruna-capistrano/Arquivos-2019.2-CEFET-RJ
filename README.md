@@ -15,10 +15,10 @@ Para execução, o arquivo "cep.dat" deve estar na mesma pasta que os arquivos d
 Fazer a indexação do arquivo dos CEPs utizando a Árvore B.
 
 # Trabalho 4 - Operações de conjunto com arquivos do Bolsa Família:
-Indexação com árvore B de um arquivo do bolsa família, realização de uma operação de conjuntos (diferença/interseção) entre as informações de pagamento de dois meses seguidos e relatório reportando o desempenho das operações. Serão utilizados os arquivos referentes aos meses de março e abril de 2019. 
+Indexação com árvore B de um arquivo do bolsa família, realização de uma operação de conjuntos (diferença) entre as informações de pagamento de dois meses seguidos e relatório reportando o desempenho das operações. Serão utilizados os arquivos referentes aos meses de março e abril de 2019 para realizar a operação de diferença. 
 Os arquivos de pagamentos do bolsa família podem ser baixados neste link: http://www.portaltransparencia.gov.br/download-de-dados/bolsa-familia-pagamentos.
 Para executar o programa btree_bolsa.c: passar o nome do arquivo do bolsa família a ser indexado por comando de linha.
-Para executar os programas de diferença e interseção dos arquivos (bolsa_diferenca.c e bolsa_intersecao.c): passar o nome do arquivo de índice do e do arquivo de dados do bolsa família do mês seguinte, nesta ordem, por comando de linha. 
+Para executar o programas de diferença entre arquivos (bolsa_diferenca.c): passar o nome do arquivo de índice e do arquivo de dados do bolsa família do mês seguinte, nesta ordem, por comando de linha. 
 
 
 *Programas compilados usando o compilador GCC no Windows 10.
