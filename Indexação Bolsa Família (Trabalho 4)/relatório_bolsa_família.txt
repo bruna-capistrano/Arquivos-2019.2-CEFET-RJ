@@ -1,0 +1,11 @@
+Aluna: Bruna Capistrano
+Indexação com Árvore B e Diferença entre Arquivos
+Foi realizada a indexação com Árvore B do arquivo dos pagamentos do benefício Bolsa 
+Família referente ao mês de março de 2019 – a indexação levou 24 minutos e 43 
+segundos.
+Após, foi realizada uma operação de conjunto entre os arquivos com os pagamentos dos 
+meses de março e abril de 2019. A diferença entre abril e março, isto é, aqueles que 
+passaram a receber o benefício em abril de 2019: levou 17 minutos e 54 segundos para 
+ser processada e gerar o arquivo ‘diferenca_bolsa.csv’, que contém 311249 registros. 
+
+
